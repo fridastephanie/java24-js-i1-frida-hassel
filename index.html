@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="./img/favicon.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js" defer></script>
+  <title>Pig</title>
+</head>
+<body>
+  <header>    
+    <h1>Pig<img id="img-pig" class="img-pig" alt="Flying pig" src="./img/pig.png"></h1>
+  </header>
+
+  <main>
+    <form id="number-of-players-form">
+      <label for="number-of-players">Number of players (1–5):</label>
+      <input id="number-of-players" type="number" min="1" max="5" required />
+      <button type="submit">Next</button>
+    </form>
+    <form id="player-names-form" class="display-none"></form>
+    <div id="player-info" class="player-info"></div>
+  </main>
+
+  <section class="game-section">
+    <h2 id="turn-info" class="display-none"></h2>
+    <button id="btn-throw-dice" class="display-none">Throw dice</button>
+    <img id="img-game" class="img-game display-none" alt="Game image" />
+    <h3 id="round-info"></h3>
+    <button id="btn-freeze-score" class="display-none">Freeze score</button>
+    <button id="btn-new-game" class="display-none">New game</button>
+  </section>
+</body>
+</html>
